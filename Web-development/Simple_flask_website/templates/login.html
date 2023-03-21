@@ -1,0 +1,56 @@
+
+{% extends "base.html" %}
+{% block title %}login{% endblock %}
+
+{% block content %}
+
+
+{%with messages = get_flashed_messages() %}
+{% if messages  %}
+    {% for msg in messages%}
+        <p>{{msg}}</p>
+
+        {% endfor  %}
+    {% endif %}
+{% endwith %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+
+  </style> 
+</head>
+
+<body>
+<h3>Please login to contact me</h3>
+<br>
+<br>
+<h5>Enter your credential!  </h5>
+<br>
+<a href= "{{url_for('register')}}">Dont have an account? Register here! </a><br>
+<br>
+<form action="#" method="post">
+    <label for="email"> E-mail:</label>
+    <input required type="text" id="nm"  placeholder = "Enter E-mail here" name="nm" ><br><br>
+    <label for="Some other value"> Password :</label>
+    <input required type="password"  id="psw"  placeholder = "Enter password here" name="psw"><br><br>
+    <button type="submit">Submit</button>
+
+  </form>
+
+
+
+</body>
+  </html>
+
+
+
+
+
+  {% endblock %}

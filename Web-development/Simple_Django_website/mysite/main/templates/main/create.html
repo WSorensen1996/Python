@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% extends "main/base.html" %}
+
+{% block title %}Project Page{% endblock %}
+
+
+{% block content %}
+
+<html>
+<head>
+<style>
+
+  h1 {text-align: center;}
+  p {text-align: center;}
+  div {text-align: center;}
+
+  </style> 
+</head>
+
+<body>
+<h3>Please login to contact me</h3>
+<br>
+<br>
+<h5>Enter your credential!  </h5>
+<br>
+<a href="" >Dont have an account? Register here! </a><br>
+<br>
+<form action="/create/" method="post">
+    
+    {%csrf_token%}
+    {{form.as_p}}
+
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+
+
+</body>
+  </html>
+
+
+
+
+
+
+{%  endblock %}
+

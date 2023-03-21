@@ -1,0 +1,28 @@
+{% extends "main/notloggedinbase.html" %}
+
+{% block title %}Create an account{% endblock %}
+
+{%load crispy_forms_tags%}
+
+{% block content %}
+
+    <head>
+        <style>
+            .form-group{
+                margin-left: 160px;
+                margin-right: 160px;
+
+            }
+        </style>
+
+    </head>
+
+    <div class="form-group" >
+        <form method = "POST" >
+            {%csrf_token%}
+            {{form|crispy}}
+            <button type="submit" class="btn btn-success" >Register</button>
+        </form>
+    </div>
+{%  endblock %}
+
