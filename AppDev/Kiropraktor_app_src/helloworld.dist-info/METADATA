@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.11
+Name: helloworld
+Formal-Name: HelloWorld
+App-ID: com.example.helloworld
+Version: 0.0.1
+Home-page: https://example.com/helloworld
+Download-URL: https://example.com/helloworld
+Author: WILS
+Author-email: williamsorensen1996@gmail.com
+Summary: Tester
